@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const May2022 = fs.readFileSync("/home/morket/.rednotebook/data/2022-05.txt", {
+const month = fs.readFileSync("/home/morket/.rednotebook/data/2019-02.txt", {
   encoding: "utf8",
 });
 
@@ -38,4 +38,4 @@ function parseMonth(monthText) {
   return days;
 }
 
-fs.writeFileSync("may.json", JSON.stringify(parseMonth(May2022)));
+fs.writeFileSync("feb2019.json", JSON.stringify(parseMonth(month)));
