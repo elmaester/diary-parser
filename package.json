@@ -1,0 +1,23 @@
+{
+  "name": "diary-parser",
+  "version": "1.0.0",
+  "description": "Parses the rednotebook text format and produces clean JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elmaester/diary-parser.git"
+  },
+  "keywords": [
+    "parser",
+    "text"
+  ],
+  "author": "elmaester",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elmaester/diary-parser/issues"
+  },
+  "homepage": "https://github.com/elmaester/diary-parser#readme"
+}
