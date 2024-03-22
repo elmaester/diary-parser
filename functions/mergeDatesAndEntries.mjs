@@ -11,4 +11,5 @@ function mergeDatesAndEntries(dates, entries) {
   }
   return datedDayObjects;
 }
-exports.mergeDatesAndEntries = mergeDatesAndEntries;
+
+export default mergeDatesAndEntries;

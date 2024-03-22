@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from "fs";
 
 const month = fs.readFileSync("/home/morket/.rednotebook/data/2019-02.txt", {
   encoding: "utf8",

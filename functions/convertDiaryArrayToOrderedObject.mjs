@@ -1,8 +1,8 @@
-const { getDateObjectFromDateString } = require("./getDateObjectFromDateString");
+import getDateObjectFromDateString from "./getDateObjectFromDateString.mjs";
 
 function convertDiaryArrayToOrderedObject(mergedDiaryArray) {
   const orderedDiary = {};
-  for (entry of mergedDiaryArray) {
+  for (const entry of mergedDiaryArray) {
     const { year, month, day } = getDateObjectFromDateString(entry.date);
     if (!orderedDiary[year]) {
       orderedDiary[year] = {};
@@ -14,4 +14,5 @@ function convertDiaryArrayToOrderedObject(mergedDiaryArray) {
   }
   return orderedDiary;
 }
-exports.convertDiaryArrayToOrderedObject = convertDiaryArrayToOrderedObject;
+
+export default convertDiaryArrayToOrderedObject;
